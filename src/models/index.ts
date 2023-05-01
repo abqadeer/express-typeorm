@@ -1,9 +1,9 @@
-import "reflect-metadata"
-import { DataSource } from "typeorm"
-import { User } from "./user"
+import 'reflect-metadata'
+import { DataSource } from 'typeorm'
+import { User } from './user'
 
 export const AppDataSource = new DataSource({
-    type: "postgres",
+    type: 'postgres',
     host: process.env.POSTGRES_HOST,
     port: parseInt(process.env.POSTGRES_PORT),
     username: process.env.POSTGRES_USER,
@@ -17,6 +17,6 @@ export const AppDataSource = new DataSource({
 
 AppDataSource.initialize()
     .then(() => {
-        console.log("Database connecton initialized..!")
+        console.log('Database connecton initialized..!')
     })
     .catch((error) => console.log(error))

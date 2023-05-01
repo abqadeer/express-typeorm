@@ -20,8 +20,6 @@ export class UserService {
             userModel.password =  user.password
     
             const errors = await validate(userModel);
-
-            console.log(errors)
     
             // TODO: improve error handling
             if (errors.length) throw('Errror validating request')

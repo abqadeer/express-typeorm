@@ -1,5 +1,5 @@
 import { Entity, Column, BaseEntity, PrimaryColumn } from 'typeorm'
-import { Length, IsEmail, IsNotEmpty } from "class-validator"
+import { Length, IsEmail, IsNotEmpty } from 'class-validator'
 import { Exclude } from 'class-transformer'
 
 @Entity()
